@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Dashboard | By Code Info</title>
+  <link rel="stylesheet" href="styles_homepage.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+  <style>
+   
+   .whole{
+        display: flex;
+        /* flex-direction: ; */
+      }
+    .maincontainer{
+        /* display: flex; */
+          width: 450px;
+          height: 580px;
+          margin-top: 40px;
+          /* margin-right: 300px; */
+          padding: 12px;
+          text-align: center;
+          /* border: 2px solid black; */
+          box-shadow: 0px 20px 50px #b8b9ba;
+         -webkit-transition: all 0.25s ease-in-out;
+         -o-transition: all 0.25s ease-in-out;
+          transition: all 0.25s ease-in-out; 
+          border-radius: 15px;
+         background-color: white;      
+    }
+
+    .maincontainer:hover{
+      box-shadow: 2px 2px 30px #8b8b8c;
+    }
+    .maincontainer ul{
+        margin-top: 40px;
+    }
+    .maincontainer ul li{
+        list-style-type: none;
+    }
+    iframe{
+        margin-top: 150px;
+        /* margin-right: 40px; */
+        margin-left: 20px;
+    }
+
+    .map{
+      position: relative;
+      bottom: 7rem;
+    }
+
+    button{
+      /* margin: 5rem; */
+      background-color: green;
+      color: white;
+      padding: 15px 30px;
+      text-align: center;
+      width: 200px;
+      margin: auto;
+      margin-top: 30px;
+      font-weight: 700;
+      border-radius: 10px;
+      /* position: relative; */
+      /* bottom: 25rem;
+      left: 7rem; */
+    }
+
+    @media screen and (max-width: 750px) {
+        .maincontainer{
+          width: 90%;
+          height: auto;
+          margin: auto;
+        }
+        iframe{
+          width: 100%;
+          margin-right: 0;
+          margin-top: 45px;
+        }
+    }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+        <img class="imlogo" src="/images/lotus (1).png" alt="">
+      <a href="#">Suvidha</a>
+      <!-- <div class="search_box">
+        <input type="text" placeholder="Search EasyPay">
+        <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+      </div> -->
+    </div>
+
+    <div class="header-icons">
+      <div class="account">
+        <img src="/images/profile-user.png" alt="">
+        <h4>Username</h4>
+      </div>
+      <img style="cursor: pointer;" src="/images/logout.png" alt="logout" class="logout_btn" title="logout"/>
+    </div>
+
+  </header>
+  <div class="container">
+    <nav>
+      <div class="side_navbar">
+        <span>Menu</span>
+        <a href="homepage.html">Home</a>
+        <a href="hospital.html">Hospitals</a>
+        <a href="foodutil.html">Food/Utilities</a>
+        <a href="shelter.html" class="active">Shelters</a>
+        <a href="guides.html">Guides</a>
+
+        <div class="links">
+          <span>You want to...</span>
+          <a href="homepage.html" class="active">Seek Help</a>
+          <a href="wanthelp.html">Provide Help</a>
+        </div>
+      </div>
+      <div class="nav"></div>
+    </nav>
+   
+        
+        <div class="whole">
+          <div class="maincontainer">
+
+            <h2>NGO Centers Currently Active </h2>
+            <ul class="list">
+                <li> Ruchi NGO</li>
+                <li>Human Hope Foundation</li>
+                <li> Incredible Himachal NGO</li>
+                <li>Lha Charitable Trust</li>
+                <li> Jagori Rural Charitable Trust</li>
+                <li>Gunjan Organization For Community Dev</li>
+                <li>SUTRA Social Uplift Through Rural Action</li>
+                <li> Waste Warriors Dharamsala</li>
+                <li>Human Hope Foundation</li>
+            </ul>
+            <!-- <a href="">
+              <div class="medical_cards">
+                <button>Shelter cards enlisted</button>
+              </div>
+            </a> -->
+          </div>
+
+          <div class="map">
+
+            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=19SwSrKGGsNY-oMOnTlOKgvvsyYu0ssM&ehbc=2E312F" width="740" height="580"></iframe>     
+          </div>
+        </div>     
+               </div>
+               <script src="js/nav.js"></script>
+       
+</body>
+</html>

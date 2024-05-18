@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suvidha - Home</title>
+  <link rel="stylesheet" href="monetary.css" />
+  <!-- Font Awesome Cdn Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+        <img class="imlogo" src="/images/lotus (1).png" alt="">
+      <a href="#">Suvidha</a>
+    </div>
+
+    <div class="header-icons">
+      <div class="account">
+        <img src="/images/profile-user.png" alt="">
+        <h4>Username</h4>
+      </div>
+      <img style="cursor: pointer;" src="/images/logout.png" alt="logout" class="logout_btn fromWant" title="logout"/>
+    </div>
+
+  </header>
+  <div class="container">
+
+    <nav>
+      <div class="side_navbar">
+        <span class = "menu1">Menu</span>
+        <a href="homepage.html" class="active">Home</a>
+        <a href="hospital.html">Hospitals</a>
+        <a href="foodutil.html">Food/Utilities</a>
+        <a href="shelter.html">Shelters</a>
+        <a href="guides.html">Guides</a>
+
+        <div class="links">
+          <span>You want to...</span>
+          <a href="homepage.html" class="active">Seek Help</a>
+          <a href="wanthelp.html">Provide Help</a>
+        </div>
+      </div>
+      <div class="nav"></div>
+    </nav> <h1 class="main_heading">Payment form</h1>
+    <div class="box">
+        <form> 
+        <p>Name: <input type ="text" name="name" required placeholder="Alex"></p>
+        <p>Card type:
+            <select name="card type" id="card type">
+            <option value="">--Select your Card--</option>
+            <option value="Visa">Visa</option>
+            <option value="Mastercard">Mastercard</option>
+            <option value="Upi id">Pay pal</option>
+            <option value="Rupay">Rupay</option>
+    
+    </select>
+    </p>
+    <p>Card Number:<input type="number" name="card number" id="card number" placeholder="1111-2222-3333-4444"></p>
+    <p>Expiration date: <input type="date" name="exp_date" id="exp_date"></p>
+    <p>CVV: <input type="password" name="CVV" id="CVV" placeholder="123"></p>
+    <input type="submit" value="Pay Now" class="button">
+    
+        </form>
+    </div>
